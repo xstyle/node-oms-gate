@@ -1,0 +1,43 @@
+{
+  "name": "oms-gate",
+  "version": "0.0.1",
+  "main": "lib/oms-gate.js",
+  "description": "Sends SMS via OMS-compliant gateway (Outlook 2007 / Office 2010 Mobile Service SOAP API)",
+  "homepage": "https://github.com/vshushkov/node-oms-gate",
+  "bugs": "https://github.com/vshushkov/node-oms-gate/issues",
+  "author": {
+    "name": "Vladimir Shushkov",
+    "email": "vladimir@shushkov.ru",
+    "url": "http://shushkov.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vshushkov/node-oms-gate"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "node-oms",
+    "oms-gate",
+    "megafon",
+    "sms",
+    "oms"
+  ],
+  "dependencies": {
+      "soap": "^0.5.0",
+      "sax": ">=0.6"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
