@@ -9,22 +9,34 @@ Install the module with: `npm install oms-gate`
 
 ## Documentation
 
-### OmsGate.init
+### Methods
 
-### OmsGate.getServiceInfo(Function callback)
+#### OmsGate.init(Object options, Function callback)
 
-### OmsGate.getUserInfo(Function callback)
+Initialize OmsGate instance. Gets service's preferences and sets options. Possible options:
 
-### OmsGate.deliverXms(String recipientNumber, String message, Function callback)
+* `user` -- account's login
+* `password` -- account's password
+* `url` -- service endpoint URL. Optional, default URL is `https://sms.megafon.ru/oms/service.asmx`.  
+* `wsdl` -- service WSDL scheme. Optional.
 
+#### OmsGate.getServiceInfo(Function callback)
+
+Returns service preferences
+
+#### OmsGate.getUserInfo(Function callback)
+
+Returns user information data
+
+#### OmsGate.deliverXms(String recipientNumber, String message, Function callback)
+
+Sends SMS to `recipientNumber` with text contains in `message`.
 
 ## Examples
 
-    var OmsGate = require('oms-gate');
+    var omsGate = require('oms-gate');
     
-    var gate = new OmsGate();
-    
-    gate.init({
+    omsGate.init({
         user: 'user',
         password: 'password'
     }, function(err, gate) {
