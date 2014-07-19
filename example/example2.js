@@ -1,10 +1,8 @@
 'use strict';
 
-var OmsGate = require('../lib/oms-gate.js');
+var omsGate = require('../lib/oms-gate.js');
 
-var gate = new OmsGate();
-
-gate.init({
+omsGate.init({
     user: 'user',
     password: 'password'
 }, function(err, gate) {
