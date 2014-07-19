@@ -1,6 +1,6 @@
 {
   "name": "oms-gate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/oms-gate.js",
   "description": "Sends SMS via OMS-compliant gateway (Outlook 2007 / Office 2010 Mobile Service SOAP API)",
   "homepage": "https://github.com/vshushkov/node-oms-gate",
@@ -23,7 +23,8 @@
     "oms-gate",
     "megafon",
     "sms",
-    "oms"
+    "oms",
+    "messaging"
   ],
   "dependencies": {
       "soap": "^0.5.0",
